@@ -1,0 +1,60 @@
+@media (max-width: 991px) {
+    header{
+        padding: 32px 24px;
+    }
+    #home{
+        background-image: url(../../images/mobile/image-header.jpg);
+        padding-top: 154px;
+    }
+    h1{
+        font-size: 42px;
+        letter-spacing: 8px;
+        margin-bottom: 10%;
+    }
+    .padding-col{
+        text-align: center!important;
+        padding: 72px 25px;
+        align-items: center;
+    }
+    h2{
+        font-size: 32px;
+        width: 95%;
+    }
+    .padding-col p{
+        line-height: 30px;
+        padding: 40px 0;
+    }
+    #about .row:nth-child(1){
+        flex-direction: column-reverse;
+    }
+    .graphic-container, .photo-container{
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .graphic-container img, .photo-container img{
+        height: 100%!important;
+        width: unset!important;
+    }
+    .info{
+        padding: 17% 5%;
+    }
+    .info p{
+        font-size: 16px;
+    }
+    #clients{
+        padding: 68px 0;
+    }
+    .opinion{
+        width: 100vw;
+    }
+    h4{
+        font-size: 16px;
+        padding: 0!important;
+    }
+    .opinion p{
+        margin: 42px 0;
+        padding: 0 6%;
+    }
+}
