@@ -48,35 +48,6 @@ header{
     align-items: center;
     padding: 34px 48px 0px 40px;
 }
-nav{
-    display: flex;
-    align-items: center;
-}
-nav ul{
-    display: flex;
-}
-nav ul li{
-    margin-right: 48px;
-}
-nav ul li a{
-    color: #FFFFFF;
-}
-button{
-    padding: 18px 30px;
-    text-transform: uppercase;
-    font-family: var(--fraunces);
-    font-size: 15px;
-    border-radius: 40px;
-    border: unset;
-}
-.navbar-toggler{
-    padding: unset;
-    border: unset;
-    color: #FFFFFF;
-}
-.navbar-toggler svg{
-    font-size: 26px;
-}
 #home{
     height: 100vh;
     background-image: url(../../images/desktop/image-header.jpg);
@@ -117,8 +88,7 @@ h2{
     text-transform: uppercase;
     position: relative;
 }
-.btn-learn::before{
-    content: '';
+.subtitle{
     width: 120%;
     height: 10px;
     border-radius: 40px;
@@ -129,11 +99,15 @@ h2{
     left: -8%;
     opacity: .3;
 }
-.padding-col:nth-child(odd) .btn-learn::before{
+.padding-col:nth-child(1) .subtitle{
     background: #FFD302;
 }
-.padding-col:nth-child(even) .btn-learn::before{
+.padding-col:nth-child(2) .subtitle{
     background: #FE7261;
+}
+.btn-learn:hover .subtitle{
+    opacity: 1;
+    transition: all .25s ease-in-out;
 }
 #services img{
     width: 100%;
@@ -219,4 +193,54 @@ footer ul{
 }
 .attribution a { 
     color: #3e52a3; 
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-right: 48px;
+}
+nav ul li a{
+    color: #FFFFFF;
+}
+nav ul li a:hover{
+    color: #FFFFFF
+}
+.nav-content button{
+    padding: 18px 30px;
+    text-transform: uppercase;
+    font-family: var(--fraunces);
+    font-size: 15px;
+    border-radius: 40px;
+    border: unset;
+}
+.nav-content button:hover{
+    background-color: #6FCFFB;
+    color: #FFFFFF;
+    transition: all .3s ease-out;
+}
+.btn-menu-mobile{
+    background-color: unset;
+    width: fit-content;
+    padding: 0;
+    display: none;
+}
+.nav-content ul{
+    display: flex;
+    align-items: center;
+}
+.nav-footer li a:hover{
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+}
+.social-media a svg path:hover{
+    fill: #FFFFFF!important;
+    transition: all .2s ease-in-out;
 }

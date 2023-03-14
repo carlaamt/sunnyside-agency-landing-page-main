@@ -57,4 +57,48 @@
         margin: 42px 0;
         padding: 0 6%;
     }
+    .btn-menu-mobile{
+        display: unset;
+        border: unset;
+    }
+    .nav-content{
+        display: none;
+    }
+    .nav-mobile{
+        position: relative;
+        display: block;
+    }
+    .nav-mobile ul{
+        position: absolute;
+        top: 54px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFBF8;
+        width: 329px;
+        padding: 46px 94px 39px;
+    }
+    .nav-mobile ul li{
+        margin-right: unset;
+        margin-bottom: 32px;
+    }
+    .nav-mobile ul li a{
+        color: #606165;
+    }
+    .nav-mobile button{
+        background-color: #FBD601;
+    }
+    .nav-mobile ul::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 9px solid #fffbf8;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #fffbf8;
+        border-bottom: 10px solid transparent;
+        right: 0;
+        bottom: 100%;
+        transform: rotateZ(180deg);
+    }
 }
