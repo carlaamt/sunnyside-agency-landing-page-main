@@ -238,6 +238,7 @@ nav ul li a:hover{
 .icon-btn-mobile{
     width: 24px;
     height: 2px;
+    display: block;
     background-color: #FFFFFF;
     transition: all .3s ease-in-out;
 }
@@ -269,7 +270,7 @@ nav ul li a:hover{
     transform: rotate(-45deg);
     transition: all .3s ease-in-out;
 }
-.nav-content ul{
+.nav-content ul, .nav-content{
     display: flex;
     align-items: center;
 }
