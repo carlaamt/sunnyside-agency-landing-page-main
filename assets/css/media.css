@@ -64,11 +64,13 @@
     .nav-content{
         display: none;
     }
-    .nav-mobile{
-        position: relative;
-        display: block;
-    }
     .nav-mobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    .nav-mobile{
         position: absolute;
         top: 54px;
         right: 0;
