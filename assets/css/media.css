@@ -72,8 +72,8 @@
     }
     .nav-mobile{
         position: absolute;
-        top: 54px;
-        right: 0;
+        top: 95px;
+        right: 30px;
         display: flex;
         flex-direction: column;
         background-color: #FFFBF8;
@@ -90,7 +90,7 @@
     .nav-mobile button{
         background-color: #FBD601;
     }
-    .nav-mobile ul::before {
+    .nav-mobile::before {
         content: "";
         width: 0;
         height: 0;
